@@ -46,3 +46,19 @@ const NewsList = ({ navigation }) => {
     );
 };
 
+const styles = StyleSheet.create({
+    container: {
+        flex:1,
+        padding:16,
+    },
+    newsItem: {
+        marginBottom: 16,
+    },
+    title: {
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    description: {
+        fontSize: 14,
+    }
+});
