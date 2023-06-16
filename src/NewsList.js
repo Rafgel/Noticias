@@ -33,7 +33,7 @@ const NewsList = ({ navigation }) => {
                 <TouchableOpacity
                 styles={styles.newsItem}
                 key={item.id}
-                onPress={()  => navigation.navigate('NewsDetaail', {newsItem: item})}
+                onPress={()  => navigation.navigate('NewsDetail', {newsItem: item})}
                 >
                     <Text styles={styles.title}>{item.title}</Text>
                     <Text styles={styles.description}>{item.description}</Text>
@@ -60,5 +60,7 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 14,
-    }
+    },
 });
+
+export default NewsList;
